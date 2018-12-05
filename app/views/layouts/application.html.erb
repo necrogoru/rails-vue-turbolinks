@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebpackerTest</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'vue_app', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div id="body">
+      <the-header></the-header>
+
+      <main>
+        <%= yield %>
+      </main>
+
+      <the-footer></the-footer>
+    </div>
+
+  </body>
+</html>
